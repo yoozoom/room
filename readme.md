@@ -10,3 +10,6 @@ Good luck!
 3. mysql
 4. bootstrap
 5. more others
+
+# Use tips
+1. Goto http://127.0.0.1:9090/nova/user/userList?id=1 you can see a bootstrap style web page.

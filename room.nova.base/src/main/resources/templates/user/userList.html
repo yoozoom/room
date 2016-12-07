@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+	<head>
+		<title>Hello World!</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="ctx" th:content="${#httpServletRequest.getContextPath()}" />
+		<!-- 引入 Bootstrap -->
+		<link rel="stylesheet" type="text/css" href="/js/bootstrap-3.3.7-dist/css/bootstrap.min.css" 
+			th:href="@{/js/bootstrap-3.3.7-dist/css/bootstrap.min.css}" />
+	</head>
+	<body>
+		<h1 th:inline="text">Hello.v.2</h1>
+		<p th:text="${hello}"></p>
+		<p th:text="${user.title}"></p>
+		<p th:text="${user.username}"></p>
+		
+		<table class="table">
+		  <caption>基本的表格布局</caption>
+		  <thead>
+		    <tr>
+		      <th>名称11111</th>
+		      <th>城市</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <td>Tanmay</td>
+		      <td>Bangalore</td>
+		    </tr>
+		    <tr>
+		      <td>Sachin</td>
+		      <td>Mumbai</td>
+		    </tr>
+		  </tbody>
+		</table>
+		
+		
+		<div class="container">
+			<h2>按钮</h2>
+			<p>.btn-lg 类制作大按钮：</p>            
+			<button type="button" class="btn btn-default btn-lg">大的默认按钮</button>
+			<button type="button" class="btn btn-info btn-lg">大的信息按钮</button>      
+		</div>
+	</body>
+	<script >var contextRoot = '${pageContext.request.contextPath}'; </script>
+	<!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+	<script src="/js/jquery/jquery-3.1.1.min.js"
+		th:src="@{/js/jquery/jquery-3.1.1.min.js}"></script>
+	<!-- 包括所有已编译的插件 -->
+	<script src="${/js/bootstrap-3.3.7-dist/js/bootstrap.min.js"
+		th:src="@{/js/bootstrap-3.3.7-dist/js/bootstrap.min.js}"></script>
+</html>
