@@ -14,4 +14,5 @@ Good luck!
 # Use tips
 1. Goto http://127.0.0.1:9090/nova/user/userList?id=1 you can see a bootstrap style web page.
 2. Check another place to push and pull code
+3. Edit a file
 
