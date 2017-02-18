@@ -13,3 +13,11 @@ Good luck!
 
 # Use tips
 1. Goto http://127.0.0.1:9090/nova/user/userList?id=1 you can see a bootstrap style web page.
+
+
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
