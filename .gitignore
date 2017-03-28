@@ -1,0 +1,18 @@
+/bin/
+.idea/
+#project ignore
+.settings
+target
+.classpath
+.project
+.iml
+Baas
+Baas.net
+Baas.php
+.iml
+src/main/webapp/logs
+
+#if you need these project folder, remove them from the ignore list
+#BIZ
+Native
+/bin-groovy/
