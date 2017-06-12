@@ -1,24 +1,25 @@
-package com.room.nova.demo.controller;
+package com.room.nova.demo.controller.user;
+
+import javax.annotation.Resource;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
 
+import com.room.nova.demo.biz.user.UserService;
 import com.room.nova.demo.vo.User;
 
 @Controller
 @RequestMapping("/user")
 public class UserController {
+    @Resource
+    private UserService userService;
 
     @RequestMapping("/getUser")
     @ResponseBody
     public User getUser() {
-        User u = new User();
-        u.setId(1L);
-        u.setUsername("kaka");
-        return u;
+        return userService.getUser();
     }
 
     @SuppressWarnings("unused")

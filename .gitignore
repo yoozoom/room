@@ -11,6 +11,7 @@ Baas.net
 Baas.php
 .iml
 src/main/webapp/logs
+.bak
 
 #if you need these project folder, remove them from the ignore list
 #BIZ
