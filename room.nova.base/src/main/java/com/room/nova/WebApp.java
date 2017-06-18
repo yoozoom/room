@@ -7,13 +7,15 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
 /**
  * 兼容发布到tomcat的启动类
  */
-public class WebApp extends SpringBootServletInitializer {
+public class WebApp 
+//extends SpringBootServletInitializer 
+{
 
-    /**
-     * 重写configure，指定原始的App.class
-     */
-    @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-        return builder.sources(App.class);
-    }
+//    /**
+//     * 重写configure，指定原始的App.class
+//     */
+//    @Override
+//    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+//        return builder.sources(App.class);
+//    }
 }
