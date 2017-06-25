@@ -10,4 +10,10 @@ public class HelloController {
     public String hello() {
         return "index";
     }
+    
+    @RequestMapping("/hello")
+    public String hello2() {
+        System.out.println("action hello...");
+        return "hello";
+    }
 }

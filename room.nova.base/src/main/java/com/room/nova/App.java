@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.context.annotation.ImportResource;
 
-//@SpringBootApplication
+//@SpringBootApplication(excludeName={"com.room.nova.mvc"})
 //@ServletComponentScan
 //@ImportResource(value = { "classpath:application-bean.xml" })
 public class App {

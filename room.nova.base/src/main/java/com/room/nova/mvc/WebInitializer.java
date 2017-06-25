@@ -9,10 +9,9 @@ import org.springframework.web.context.support.AnnotationConfigWebApplicationCon
 import org.springframework.web.servlet.DispatcherServlet;
 
 /**
- * ÀàËÆÅäÖÃweb.xml
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½web.xml
  */
 public class WebInitializer implements WebApplicationInitializer {
-
 
     @Override
     public void onStartup(ServletContext servletContext) throws ServletException {
