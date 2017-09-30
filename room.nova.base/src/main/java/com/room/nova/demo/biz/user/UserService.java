@@ -1,5 +1,9 @@
 package com.room.nova.demo.biz.user;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Optional;
+
 import javax.annotation.Resource;
 
 import org.springframework.beans.factory.annotation.Value;
@@ -30,5 +34,12 @@ public class UserService {
         Human h2 = (Human) springUtils.getBean("aersa");
         System.out.println(h2.getName());
         return u;
+    }
+    
+    
+    public static void main(String[] args) {
+        Map<String, String> map = new HashMap<>();
+        map.put("a", "1");
+        Optional.ofNullable(map).ifPresent(value -> System.out.println(value + " " + map.get("a")));
     }
 }
